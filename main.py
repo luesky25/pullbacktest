@@ -47,7 +47,7 @@ def parse_args():
     # 出场参数
     parser.add_argument('--exit_mode',    default='fixed_r',
                         choices=['fixed_r', 'atr_trail', 'ema_exit'])
-    parser.add_argument('--rr',           type=float, default=3.0,
+    parser.add_argument('--rr',           type=float, default=2.2,
                         help='fixed_r模式盈亏比（TP = entry + risk * rr）')
     parser.add_argument('--trail_mult',   type=float, default=2.0,
                         help='atr_trail模式trailing stop ATR倍数')
