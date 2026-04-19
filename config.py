@@ -25,7 +25,7 @@ class StrategyParams:
     # ── 出场参数 ─────────────────────────────────────
     # exit_mode: 'fixed_r' | 'atr_trail' | 'ema_exit'
     exit_mode: str = 'fixed_r'
-    risk_reward: float = 2.0    # fixed_r模式下的盈亏比（TP = entry ± risk * rr）
+    risk_reward: float = 2.2    # fixed_r模式下的盈亏比（TP = entry ± risk * rr）
     atr_trail_mult: float = 2.0 # atr_trail模式下的trailing stop倍数
     sl_atr_mult: float = 0.5    # 止损设置：breakout_level ± ATR * sl_atr_mult
 
